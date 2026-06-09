@@ -1,0 +1,64 @@
+# Office Calm – Tienda de Productos de Oficina 🖥️
+
+Tienda online de productos de oficina con carrito de compras funcional. Desarrollado como proyecto final del curso de JavaScript en CoderHouse.
+
+---
+
+## ¿Qué hace?
+
+- **Catálogo de productos** cargado dinámicamente desde un archivo JSON
+- **Carrito de compras** con posibilidad de agregar, eliminar y vaciar productos
+- **Persistencia del carrito** con `localStorage` — los productos se mantienen al recargar la página
+- **Total en tiempo real** calculado automáticamente
+- **Alertas con SweetAlert2** al agregar productos, vaciar carrito y realizar la compra
+- **Reloj en tiempo real** obtenido desde la API pública WorldTimeAPI
+- **Formulario de contacto** con validación y confirmación visual
+- **Diseño responsive** con navbar hamburguesa en mobile
+
+## Productos disponibles
+
+Escritorio Minimalista, Silla Ergonómica, Mueble Organizador, Lámpara de Escritorio, Archivador Elegante y Soporte para Laptop.
+
+---
+
+## Tecnologías utilizadas
+
+- **HTML5** — Estructura semántica
+- **CSS3** — Estilos personalizados
+- **JavaScript (ES6+)** — Lógica de carrito, fetch, DOM, eventos, localStorage
+- **Bootstrap 5.3** — Grid y componentes responsive
+- **SweetAlert2** — Alertas y confirmaciones
+- **WorldTimeAPI** — Reloj en tiempo real vía API externa
+- **JSON** — Fuente de datos de productos (`js/api/productos.json`)
+
+---
+
+## Estructura del proyecto
+
+```
+├── index.html
+├── css/
+│   └── main.css
+├── js/
+│   ├── main.js
+│   └── api/
+│       └── productos.json
+└── img/
+```
+
+---
+
+## Cómo visualizarlo
+
+Por ser un sitio estático no requiere instalación, pero **necesita servirse desde un servidor local** (no abre directo desde el sistema de archivos) porque usa `fetch()` para cargar el JSON.
+
+**Opción recomendada — Live Server (VS Code)**
+1. Abrir la carpeta en VS Code
+2. Instalar la extensión **Live Server** (Ritwick Dey)
+3. Clic derecho en `index.html` → Open with Live Server
+
+---
+
+## Autor
+
+**Guido Figueroa** — CoderHouse, JavaScript — 2024
